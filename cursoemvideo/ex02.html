@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+
+<body>
+    <h1>Paises da Otan</h1>
+    Aonde tu mora: <input type="text" id="pais">
+    <input type="submit" value="Verificar" onclick="pai()">
+    <div id="camp"></div>
+
+    <script>
+
+        function pai() {
+
+
+            var paises = ["Brasil","Russia","India","China","Saudi Arabia"]
+            let pais = window.document.querySelector('input#pais')
+            let camp = window.document.querySelector('div#camp')
+            var res = (pais.value)
+            for (let i = 0; i < paises.length; i++) {
+            if (res == paises[i]) {
+                camp.innerHTML += `<p> Seu pais faz parte da BRICS </p>`
+                return 0
+            }else{
+                camp.innerHTML += `<p> Seu pais nao faz parte da BRICS </p>`
+                return 0
+            }
+            }
+
+        }
+    </script>
+</body>
+
+</html>
