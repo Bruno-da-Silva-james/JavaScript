@@ -20,3 +20,4 @@ function fraseInp(nome,idade,cidade,prof) {
 }
 
 fraseInp(nome, idade,cidade,prof)
+
