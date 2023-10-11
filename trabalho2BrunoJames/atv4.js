@@ -16,7 +16,7 @@ function irrf(sal) {
     let irrf = [0.93, 0.85, 0.77]
     let salDescIrrf = inss(sala)
     let liquido = 0
-    if (sal <= 2112) { console.log("As taxas sao isentas"); }
+    if (sal <= 2112) { return liquido = `A taxa e isenta` }
     if (sal >= 2113 && sal < 3800) { liquido = salDescIrrf * irrf[0] }
     if (sal >= 3800 && sal < 7500) { liquido = salDescIrrf * irrf[1] }
     if (sal >= 7500) { liquido = salDescIrrf * irrf[2] }
