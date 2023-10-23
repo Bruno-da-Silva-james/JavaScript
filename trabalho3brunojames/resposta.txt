@@ -1,0 +1,8 @@
+1.Esta mostrando 14, pois a cada iteração o valor é valor = valor + i, entao seria 1,3,6,9,14.
+
+2a.Numeros maiores que 18.
+
+2b.Pode, mas usando uma funcao chamada .entries(), que mostra o index e o elemento dentro desse index.
+
+3.Esse codigo faz com que o loop for redefina a variavel linha com asterisco e a cada iteracao dos loops va adicionando asterisco a variavel linha e assim ate que a quantidadeAtual seja a mesma que a quantidadeTotal, mostrando uma escada.
+

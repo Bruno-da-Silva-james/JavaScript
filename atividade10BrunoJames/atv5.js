@@ -1,9 +1,8 @@
-function par(num) {
-    let soma = num
-    for (let i = 1; i > num; i ++) {
-        soma *= i 
+function fatorial(numero) {
+    let num = 1;
+    for (let i = numero; i > 1; i--) {
+        num *= i;
     }
-    console.log(soma);
+    return num;
 }
-
-console.log(par(10));
+console.log(fatorial(10));
