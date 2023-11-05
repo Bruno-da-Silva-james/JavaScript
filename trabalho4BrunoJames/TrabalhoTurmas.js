@@ -13,10 +13,8 @@ function login() {
     console.log(`Ola! ${nomeProf} vamos fazer as medias de ${nomeMat}! \n`);
     let valAluno = leitor.questionInt('Ensira a quantidade de alunos a serem calculados: ')
     for (let i = 0; i < valAluno; i++) {
-        alunos.push(teste)
+        alunos.push(aluno)
     }
-    
-    
 
     console.log(alunos);
     console.log('As maiores notas sao: ', getNotaMaior());
