@@ -1,9 +1,11 @@
 const leitor = require('readline-sync')
-    let alunoL = {}
-    let alunos = []
-    let arrayMaior = []
+let alunoL = {}
+let alunos = []
+let arrayMaior = []
 function main() {
+
     login()
+
 }
 
 function login() {
@@ -13,11 +15,12 @@ function login() {
     console.log(`Ola! ${nomeProf} vamos fazer as medias de ${nomeMat}! \n`);
     let valAluno = leitor.questionInt('Ensira a quantidade de alunos a serem calculados: ')
     for (let i = 0; i < valAluno; i++) {
-        alunos.push(aluno)
+        insertAlunos()
     }
-
-    console.log(alunos);
+    
+    console.log(alunos);    
     console.log('As maiores notas sao: ', getNotaMaior());
+
 }
 
 function getNotaMaior() {
@@ -49,7 +52,9 @@ function insertAlunos() {
     } else {
         alunos.status = `Reprovado`
     }
-    return alunoL
+    
+    alunos.push(alunoL)
+    
 }
 
 
