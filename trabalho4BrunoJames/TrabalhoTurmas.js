@@ -34,7 +34,7 @@ function insertAlunos() {
     alunoL.nome = leitor.question(`Ensira o nome do aluno: `)
     for (let i = 0; i < 6; i++) {
         nota = leitor.questionInt(`Ensira a nota do aluno de 1 a 10: `)
-        if (nota > 10) {
+        if (nota > 10 || nota < 0) {
             console.log('Valor excedido...\n');
             i--
         } else {
