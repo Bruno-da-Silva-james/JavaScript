@@ -20,7 +20,7 @@
 }
 
 areaCalc();
-*/
+
 
 // Node.js program to demonstrate the  
 // fs.readFileSync() method 
@@ -36,7 +36,7 @@ const data = fs.readFileSync('./tst.js',
 let lines = data.split('')
 // Display the file data
 console.log(lines);
-
+*/
 
 const input = require('fs').readFileSync('./tst.js', 'utf8')
 const lines = input.split(`\n`)
