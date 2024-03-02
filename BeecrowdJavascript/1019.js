@@ -3,13 +3,15 @@ const lines = input.split(`\n`)
 
 
 function timeConverter() {
-    let N = lines.shift()
+    let N = parseInt(lines.shift())
+    let hour = parseInt(N / 3600)
+    let min = parseInt(N / 60)
 
-    let hour = parseInt(N * 60)
-    let min = parseInt(hour % 60)
-    let sec = parseInt(min % 60)
+    
+    
 
-    console.log(hour,min,sec);
+    console.log(hour,min,N);
+    console.log(N);
 }
 
 timeConverter()
